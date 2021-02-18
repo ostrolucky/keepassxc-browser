@@ -57,6 +57,8 @@ $(async () => {
         await browser.runtime.sendMessage({
             action: 'associate'
         });
+
+        await sendMessageToTab('retrive_credentials_forced');
         close();
     });
 
